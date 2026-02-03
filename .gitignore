@@ -6,6 +6,8 @@ backend/*.pyc
 backend/venv/
 backend/.venv/
 backend/.env
+.pytest_cache/
+backend/.pytest_cache/
 
 backend/assets/
 backend/files/

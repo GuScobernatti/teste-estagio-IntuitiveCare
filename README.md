@@ -42,7 +42,7 @@ Siga os passos abaixo na ordem apresentada para configurar o ambiente.
 1.  Acesse a pasta do backend:
 
     ```bash
-    cd backend
+    cd ./backend
     ```
 
 2.  Crie um ambiente virtual:
@@ -61,7 +61,7 @@ Siga os passos abaixo na ordem apresentada para configurar o ambiente.
     pip install -r requirements.txt
     ```
 
-4.  **Variáveis de ambiente (.env):**
+4.  Variáveis de ambiente (.env):
     - Renomeie o arquivo `.env.example` para `.env`.
     - Edite o arquivo `.env` e coloque o usuário e senha do **seu** banco de dados PostgreSQL local e o nome do banco de dados criado na variável `DATABASE_URL`.
 
@@ -75,7 +75,7 @@ Siga os passos abaixo na ordem apresentada para configurar o ambiente.
 
 1.  Em um novo terminal, acesse a pasta do frontend:
     ```bash
-    cd frontend
+    cd ./frontend
     ```
 2.  Instale as dependências e configure o ambiente:
     ```bash
@@ -88,7 +88,8 @@ Siga os passos abaixo na ordem apresentada para configurar o ambiente.
 ## ▶️ Como Executar os códigos
 
 Execute os scripts Python na ordem abaixo para realizar o processo completo de ETL (Extract, Transform, Load).
-**⚠️ ATENÇÃO:** Antes de executar os códigos, verifique no terminal se o código está sendo executado dentro da pasta **backend** e se o **venv** está ativado (passos 1 a 4).
+
+- **⚠️ ATENÇÃO:** Antes de executar os códigos, verifique no terminal se o código está sendo executado dentro da pasta **backend** e se o **venv** está ativado (passos 1 a 4).
 
 ### Passo 1: Automação de download
 
@@ -98,7 +99,7 @@ Este script conecta no FTP da ANS e baixa os arquivos ZIP (Demonstrações Cont�
 python script_download.py
 ```
 
-##### Resultado: Cria a pasta ./assets com os arquivos brutos (zip e csv).
+**Resultado:** Cria a pasta ./assets com os arquivos brutos (zip e csv).
 
 ### Passo 2: Extração e tratamento de dados
 
@@ -108,7 +109,7 @@ Extrai os ZIPs, filtra as despesas de "Eventos/Sinistros", limpa os dados e cons
 python etapa1_process_file.py
 ```
 
-##### Resultado: Cria a pasta ./files com os arquivos unzipados e o arquivo consolidado_despesas.csv e o zip dele.
+**Resultado**: Cria a pasta ./files com os arquivos unzipados e o arquivo consolidado_despesas.csv e o zip dele.
 
 ### Passo 3: Validação de dados e merge de CSVs
 
@@ -118,7 +119,7 @@ Lê o arquivo Relatório_cadop.csv, valida dados: cnpj, razão social vazia e n�
 python etapa2_validatingData.py
 ```
 
-##### Resultado: Cria o arquivo despesas_agregadas.csv com as informações de valores de cada operadora e o arquivo relatorio_final.csv com o merge entre consolidado_despesas.csv + Relatorio_cadop.csv, além de o zip do despesas_agregadas.csv chamado Teste_Gustavo_Luiz.zip, como pedido.
+**Resultado:** Cria o arquivo despesas_agregadas.csv com as informações de valores de cada operadora e o arquivo relatorio_final.csv com o merge entre consolidado_despesas.csv + Relatorio_cadop.csv, além de o zip do despesas_agregadas.csv chamado Teste_Gustavo_Luiz.zip, como pedido.
 
 ### Passo 4: Popular Banco de dados
 
@@ -134,7 +135,7 @@ Lê os arquivos processados, inicia o banco de dados PostgreSQL, cria as tabelas
 python etapa3_integratingDB.py
 ```
 
-##### Resultado: Tabelas populadas no banco datas_info, além de retornar a resposta para as três queries pedidas.
+**Resultado:** Tabelas populadas no banco datas_info, além de retornar a resposta para as três queries pedidas.
 
 ### Passo 5: Iniciar a API (Backend)
 
@@ -161,6 +162,27 @@ Conforme solicitado, foi criada uma coleção do Postman contendo todas as rotas
 - **Arquivo:** `./postman_collection.json` (Na raíz do projeto)
 - **Como usar:** Importe este arquivo no seu Postman para testar as rotas pré-configuradas.
 - **Alternativa:** A documentação também está disponível via Swagger em `http://localhost:8000/docs`.
+
+---
+
+## 🧪 Testes Automatizados
+
+Para garantir a qualidade do código e a integridade das regras de negócio, foram implementados testes automatizados cobrindo duas camadas:
+
+1.  **Testes Unitários:** Validação pura de lógica de dados.
+2.  **Testes de Integração:** Verificação das rotas da API (`TestClient`), garantindo que os endpoints respondem corretamente (200 OK, 404 Not Found, paginação, etc).
+
+**Como executar:**
+
+1.  Certifique-se de estar na pasta `backend` com a venv ativa.
+2.  Instale as dependências de teste (caso não tenha feito):
+    ```bash
+    pip install pytest httpx
+    ```
+3.  Execute o comando:
+    ```bash
+    python -m pytest tests.py
+    ```
 
 ---
 
@@ -294,6 +316,7 @@ A seguir, segue as justificativas por cada decisão tomada nos trade-offs. Cada 
 - **📊 Visualização Rica:** Frontend interativo com gráficos (Chart.js) e tratamento de erros de UX.
 - **📊 Visualização top 5 maiores despesas:** Seção com o ranking das 5 operadoras com mais despesas.
 - **📝 Documentação Viva:** Uso do Swagger UI para documentação interativa da API.
+- **🤖 Testes Automatizados Robustos:** Implementação de uma suíte de testes com `pytest` abrangendo tanto a lógica unitária de validação de dados (CNPJ, valores) quanto testes de integração das rotas da API (FastAPI TestClient).
 - **🗂️ Versionamento:** Histórico Git estruturado.
 
 ---
