@@ -1,0 +1,482 @@
+{
+	"info": {
+		"_postman_id": "903dde96-ba47-4646-bf33-a36f361d5cf0",
+		"name": "Monitoramento Operadoras API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41172874"
+	},
+	"item": [
+		{
+			"name": "listar_operadoras",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/operadoras?page=1&limit=10&query_search=unimed",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"operadoras"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "query_search",
+							"value": "unimed"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "listar_operadoras",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/operadoras?page=1&limit=10&query_search=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"operadoras"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "query_search",
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Tue, 03 Feb 2026 03:11:29 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "2560"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"operators\": [\n        {\n            \"registro_ans\": \"419761\",\n            \"nome_fantasia\": null,\n            \"uf\": \"MG\",\n            \"data_registro_ans\": \"2015-05-19\",\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"cnpj\": \"19541931000125\",\n            \"razao_social\": \"18 DE JULHO ADMINISTRADORA DE BENEFÍCIOS LTDA\",\n            \"cidade\": \"Além Paraíba\"\n        },\n        {\n            \"registro_ans\": \"421545\",\n            \"nome_fantasia\": null,\n            \"uf\": \"SP\",\n            \"data_registro_ans\": \"2019-06-13\",\n            \"modalidade\": \"Odontologia de Grupo\",\n            \"cnpj\": \"22869997000153\",\n            \"razao_social\": \"2B ODONTOLOGIA OPERADORA DE PLANOS ODONTOLÓGICOS LTDA\",\n            \"cidade\": \"São Paulo\"\n        },\n        {\n            \"registro_ans\": \"421421\",\n            \"nome_fantasia\": null,\n            \"uf\": \"SP\",\n            \"data_registro_ans\": \"2018-10-09\",\n            \"modalidade\": \"Medicina de Grupo\",\n            \"cnpj\": \"27452545000195\",\n            \"razao_social\": \"2CARE OPERADORA DE SAÚDE LTDA.\",\n            \"cidade\": \"Campinas\"\n        },\n        {\n            \"registro_ans\": \"418030\",\n            \"nome_fantasia\": \"A.P.S. SAÚDE.\",\n            \"uf\": \"SP\",\n            \"data_registro_ans\": \"2011-05-05\",\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"cnpj\": \"13138885000131\",\n            \"razao_social\": \"A.P.S. ADMINISTRADORA DE BENEFÍCOS LTDA.\",\n            \"cidade\": \"São Paulo\"\n        },\n        {\n            \"registro_ans\": \"314668\",\n            \"nome_fantasia\": \"ABERTTA SAÚDE\",\n            \"uf\": \"MG\",\n            \"data_registro_ans\": \"1998-12-28\",\n            \"modalidade\": \"Autogestão\",\n            \"cnpj\": \"17505793000101\",\n            \"razao_social\": \"ABERTTA SAÚDE - ASSOCIAÇÃO BENEFICENTE DOS EMPREGADOS DA ARCELORMITTAL NO BRASIL\",\n            \"cidade\": \"Belo Horizonte\"\n        },\n        {\n            \"registro_ans\": \"419621\",\n            \"nome_fantasia\": null,\n            \"uf\": \"RJ\",\n            \"data_registro_ans\": \"2014-11-13\",\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"cnpj\": \"17687511000126\",\n            \"razao_social\": \"ABPLUS ADMINISTRADORA DE BENEFÍCIOS LTDA.\",\n            \"cidade\": \"Rio de Janeiro\"\n        },\n        {\n            \"registro_ans\": \"418901\",\n            \"nome_fantasia\": \"AD SALUTE\",\n            \"uf\": \"RJ\",\n            \"data_registro_ans\": \"2013-06-13\",\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"cnpj\": \"10458298000131\",\n            \"razao_social\": \"AD SALUTE ADMINISTRADORA DE BENEFÍCIOS LTDA\",\n            \"cidade\": \"Rio de Janeiro\"\n        },\n        {\n            \"registro_ans\": \"424293\",\n            \"nome_fantasia\": null,\n            \"uf\": \"SP\",\n            \"data_registro_ans\": \"2025-01-27\",\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"cnpj\": \"58280182000181\",\n            \"razao_social\": \"ADC ADMINISTRADORA DE BENEFICIOS LTDA\",\n            \"cidade\": \"São Paulo\"\n        },\n        {\n            \"registro_ans\": \"421553\",\n            \"nome_fantasia\": \"ADM LIFE\",\n            \"uf\": \"SP\",\n            \"data_registro_ans\": \"2019-01-09\",\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"cnpj\": \"28315826000169\",\n            \"razao_social\": \"ADM LIFE - ADMINISTRADORA DE BENEFÍCIOS LTDA.\",\n            \"cidade\": \"São Paulo\"\n        },\n        {\n            \"registro_ans\": \"416932\",\n            \"nome_fantasia\": \"GÉIA ADMINISTRADORA DE BENEFICIOS\",\n            \"uf\": \"SP\",\n            \"data_registro_ans\": \"2009-03-30\",\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"cnpj\": \"07867825000157\",\n            \"razao_social\": \"ADMSERV BENEFÍCIOS E SERVIÇOS LTDA\",\n            \"cidade\": \"São Paulo\"\n        }\n    ],\n    \"total\": 1110,\n    \"page\": 1,\n    \"limit\": 10,\n    \"total_pages\": 111\n}"
+				},
+				{
+					"name": "listar_operadoras",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/operadoras?page=1&limit=10&query_search=unimed",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"operadoras"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "query_search",
+									"value": "unimed"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Tue, 03 Feb 2026 03:23:03 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "2738"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"operators\": [\n        {\n            \"registro_ans\": \"386596\",\n            \"nome_fantasia\": \"UNIMED CERRADO\",\n            \"uf\": \"GO\",\n            \"data_registro_ans\": \"1998-12-24\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"cnpj\": \"00366982000130\",\n            \"razao_social\": \"CENTRAL REGIONAL DAS COOPERATIVAS MÉDICAS - UNIMED CERRADO\",\n            \"cidade\": \"Goiânia\"\n        },\n        {\n            \"registro_ans\": \"367087\",\n            \"nome_fantasia\": \"UNIMED RIO GRANDE DO SUL\",\n            \"uf\": \"RS\",\n            \"data_registro_ans\": \"1998-12-18\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"cnpj\": \"87158507000156\",\n            \"razao_social\": \"COOPERATIVA CENTRAL UNIMED DE COOPERATIVAS DE ASSISTÊNCIA À SAÚDE DO RIO GRANDE DO SUL LTDA.\",\n            \"cidade\": \"Porto Alegre\"\n        },\n        {\n            \"registro_ans\": \"313084\",\n            \"nome_fantasia\": \"UNIMED DE ARAGUAINA\",\n            \"uf\": \"TO\",\n            \"data_registro_ans\": \"1998-12-24\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"cnpj\": \"25064148000110\",\n            \"razao_social\": \"COOPERATIVA DE TRABALHO MEDICO DE ARAGUAÍNA - UNIMED ARAGUAÍNA\",\n            \"cidade\": \"Araguaína\"\n        },\n        {\n            \"registro_ans\": \"306398\",\n            \"nome_fantasia\": null,\n            \"uf\": \"RS\",\n            \"data_registro_ans\": \"1998-12-21\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"cnpj\": \"87300448000109\",\n            \"razao_social\": \"UNIMED - COOPERATIVA DE SERVIÇOS DE SAÚDE DOS VALES DO TAQUARI E RIO PARDO LTDA.\",\n            \"cidade\": \"Lajeado\"\n        },\n        {\n            \"registro_ans\": \"354996\",\n            \"nome_fantasia\": \"UNIMED ALFENAS\",\n            \"uf\": \"MG\",\n            \"data_registro_ans\": \"1998-12-18\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"cnpj\": \"42946061000196\",\n            \"razao_social\": \"UNIMED ALFENAS COOPERATIVA DE TRABALHO MEDICO\",\n            \"cidade\": \"Alfenas\"\n        },\n        {\n            \"registro_ans\": \"324159\",\n            \"nome_fantasia\": \"UNIMED ALTA MOGIANA\",\n            \"uf\": \"SP\",\n            \"data_registro_ans\": \"1998-12-18\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"cnpj\": \"57214900000159\",\n            \"razao_social\": \"UNIMED ALTA MOGIANA COOPERATIVA DE TRABALHO MÉDICO\",\n            \"cidade\": \"Orlândia\"\n        },\n        {\n            \"registro_ans\": \"343684\",\n            \"nome_fantasia\": \"UNIMED ALTO DA SERRA\",\n            \"uf\": \"RS\",\n            \"data_registro_ans\": \"1998-12-23\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"cnpj\": \"88732318000108\",\n            \"razao_social\": \"UNIMED ALTO DA SERRA - SOCIEDADE COOPERATIVA DE SERVIÇO MÉDICO LTDA.\",\n            \"cidade\": \"Vacaria\"\n        },\n        {\n            \"registro_ans\": \"352519\",\n            \"nome_fantasia\": \"UNIMED ALTO JACUÍ\",\n            \"uf\": \"RS\",\n            \"data_registro_ans\": \"1998-12-23\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"cnpj\": \"72234164000194\",\n            \"razao_social\": \"UNIMED ALTO JACUÍ/RS - COOPERATIVA DE ASSISTÊNCIA À SAÚDE LTDA\",\n            \"cidade\": \"Ibirubá\"\n        },\n        {\n            \"registro_ans\": \"341819\",\n            \"nome_fantasia\": \"UNIMED ALTO PARANAIBA\",\n            \"uf\": \"MG\",\n            \"data_registro_ans\": \"1998-12-17\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"cnpj\": \"00763923000103\",\n            \"razao_social\": \"UNIMED ALTO PARANAIBA COOPERATIVA DE TRABALHO MEDICO\",\n            \"cidade\": \"Coromandel\"\n        },\n        {\n            \"registro_ans\": \"348261\",\n            \"nome_fantasia\": \"UNIMED ALTO SÃO FRANCISCO\",\n            \"uf\": \"MG\",\n            \"data_registro_ans\": \"1998-12-17\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"cnpj\": \"42889436000123\",\n            \"razao_social\": \"UNIMED ALTO SÃO FRANCISCO COOPERATIVA DE TRABALHO MÉDICO\",\n            \"cidade\": \"Formiga\"\n        }\n    ],\n    \"total\": 260,\n    \"page\": 1,\n    \"limit\": 10,\n    \"total_pages\": 26\n}"
+				}
+			]
+		},
+		{
+			"name": "operadora",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/operadoras/27452545000195",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"operadoras",
+						"27452545000195"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "operadora",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/operadoras/27452545000195",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"operadoras",
+								"27452545000195"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Tue, 03 Feb 2026 03:13:44 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "217"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "[\n    {\n        \"registro_ans\": \"421421\",\n        \"nome_fantasia\": null,\n        \"uf\": \"SP\",\n        \"data_registro_ans\": \"2018-10-09\",\n        \"modalidade\": \"Medicina de Grupo\",\n        \"cnpj\": \"27452545000195\",\n        \"razao_social\": \"2CARE OPERADORA DE SAÚDE LTDA.\",\n        \"cidade\": \"Campinas\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "operadora_despesas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/operadoras/27452545000195/despesas",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"operadoras",
+						"27452545000195",
+						"despesas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "operadora_despesas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/operadoras/27452545000195/despesas",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"operadoras",
+								"27452545000195",
+								"despesas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Tue, 03 Feb 2026 03:14:05 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "21314"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "[\n    {\n        \"ano\": 2025,\n        \"id\": 101696,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 697142.15\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105811,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 32709294.96\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105810,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 20171954.41\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105809,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR \",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 60365123.97\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105808,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS NA MODALIDADE DE PAGAMENTO POR PROCEDIMENTO\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 60365123.97\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105807,\n        \"descricao\": \"EVENTOS/SINISTROS CONHECIDOS OU AVISADOS DE ASSISTÊNCIA À SAÚDE\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 61228543.37\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105806,\n        \"descricao\": \"EVENTOS INDENIZÁVEIS LÍQUIDOS / SINISTROS RETIDOS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 61558843.68\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105696,\n        \"descricao\": \"Provisão para Eventos/Sinistros Ocorridos e Não Avisados (PEONA) - Outros Prestadores\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 14677691.02\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105695,\n        \"descricao\": \"Provisão para Eventos/Sinistros Ocorridos e Não Avisados (PEONA)\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 14677691.02\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105694,\n        \"descricao\": \"Provisão de Eventos/Sinistros a Liquidar para Outros Prestadores de Serviços Assistenciais\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 1116423.83\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105693,\n        \"descricao\": \"Provisão de Eventos /Sinistros a Liquidar para o SUS  ( %  hc x ABI)\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 139942.69\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105692,\n        \"descricao\": \"Provisão de Eventos/Sinistros a Liquidar para o SUS - GRU\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 0\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105691,\n        \"descricao\": \"Provisão de Eventos/Sinistros a Liquidar para o SUS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 139942.69\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105584,\n        \"descricao\": \"Participação dos Beneficiários em Eventos/Sinistros Indenizados\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 37214.69\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105583,\n        \"descricao\": \"Participação dos Beneficiários em Eventos/Sinistros Indenizados a Receber\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 23916.66\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105582,\n        \"descricao\": \"PARTICIPAÇÃO DOS BENEFICIÁRIOS EM EVENTOS/SINISTROS INDENIZADOS DE ASSISTÊNCIA MÉDICO-HOSPITALAR\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 23916.66\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 105581,\n        \"descricao\": \"PARTICIPAÇÃO DOS BENEFICIÁRIOS EM EVENTOS/SINISTROS INDENIZADOS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 23916.66\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101717,\n        \"descricao\": \"Provisão de Eventos/Sinistros Ocorridos e Não Avisados - Outros Prestadores\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 330300.31\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101716,\n        \"descricao\": \"Variação da Provisão de Eventos/Sinistros Ocorridos e Não Avisados de Assistência Médico-Hospitalar\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 330300.31\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101715,\n        \"descricao\": \"Variação da Provisão de Eventos/Sinistros Ocorridos e Não Avisados de Assistência Médico-Hospitalar\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 330300.31\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101714,\n        \"descricao\": \"VARIAÇÃO DA PROVISÃO DE EVENTOS/SINISTROS OCORRIDOS E NÃO AVISADOS DE ASSISTÊNCIA MÉDICO-HOSPITALAR\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 330300.31\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101713,\n        \"descricao\": \"VARIAÇÃO DA PROVISÃO DE EVENTOS/SINISTROS OCORRIDOS E NÃO AVISADOS DE ASSISTÊNCIA A SAÚDE\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 330300.31\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101712,\n        \"descricao\": \"VARIAÇÃO DA PROVISÃO DE EVENTOS/SINISTROS OCORRIDOS E NÃO AVISADOS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 330300.31\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101711,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 39501.79\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101710,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR \",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 39501.79\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101709,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS NO SISTEMA ÚNICO DE SAÚDE - SUS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 39501.79\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101708,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 46616\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101707,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 542273.59\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101706,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 4850.57\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101705,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR \",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 520650.4\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101704,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS -  REEMBOLSO\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 520650.4\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101703,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 15288.43\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101702,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 3539.23\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101701,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 100055.35\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101700,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 184384.2\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101699,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR \",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 303267.21\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101698,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  NA MODALIDADE DE PAGAMENTO POR CAPITATION\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 303267.21\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 101697,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 1,\n        \"valor_despesas\": 11196731.84\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 136749,\n        \"descricao\": \"Participação dos Beneficiários em Eventos/Sinistros Indenizados\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 44531.97\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132366,\n        \"descricao\": \"EVENTOS INDENIZÁVEIS LÍQUIDOS / SINISTROS RETIDOS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 125788780.44\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132367,\n        \"descricao\": \"EVENTOS/SINISTROS CONHECIDOS OU AVISADOS DE ASSISTÊNCIA À SAÚDE\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 124596726.54\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132368,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS NA MODALIDADE DE PAGAMENTO POR PROCEDIMENTO\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 122824222.77\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132369,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR \",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 122824222.77\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132370,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 42901204.19\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132371,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 65397757.79\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132372,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 1628585.44\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132373,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 23363297.96\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132374,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  NA MODALIDADE DE PAGAMENTO POR CAPITATION\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 572994.91\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132375,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR \",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 572994.91\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132376,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 339123.68\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132377,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 196092.3\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132378,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 4265.18\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132379,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 34403.75\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132380,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS -  REEMBOLSO\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 1157393.27\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132381,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR \",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 1157393.27\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132382,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 40710.57\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132383,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 1199147.32\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132384,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 107756.6\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132385,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS NO SISTEMA ÚNICO DE SAÚDE - SUS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 42115.59\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132386,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR \",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 42115.59\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132387,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 42115.59\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132388,\n        \"descricao\": \"VARIAÇÃO DA PROVISÃO DE EVENTOS/SINISTROS OCORRIDOS E NÃO AVISADOS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 1192053.9\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132389,\n        \"descricao\": \"VARIAÇÃO DA PROVISÃO DE EVENTOS/SINISTROS OCORRIDOS E NÃO AVISADOS DE ASSISTÊNCIA A SAÚDE\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 1192053.9\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132390,\n        \"descricao\": \"VARIAÇÃO DA PROVISÃO DE EVENTOS/SINISTROS OCORRIDOS E NÃO AVISADOS DE ASSISTÊNCIA MÉDICO-HOSPITALAR\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 1192053.9\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132391,\n        \"descricao\": \"Variação da Provisão de Eventos/Sinistros Ocorridos e Não Avisados de Assistência Médico-Hospitalar\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 1192053.9\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132392,\n        \"descricao\": \"Variação da Provisão de Eventos/Sinistros Ocorridos e Não Avisados de Assistência Médico-Hospitalar\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 1192053.9\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 132393,\n        \"descricao\": \"Provisão de Eventos/Sinistros Ocorridos e Não Avisados - Outros Prestadores\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 1192053.9\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 134027,\n        \"descricao\": \"Provisão de Eventos/Sinistros a Liquidar para o SUS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 142556.49\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 134028,\n        \"descricao\": \"Provisão de Eventos /Sinistros a Liquidar para o SUS  ( %  hc x ABI)\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 142556.49\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 134029,\n        \"descricao\": \"Provisão de Eventos/Sinistros a Liquidar para Outros Prestadores de Serviços Assistenciais\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 1182004.34\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 134030,\n        \"descricao\": \"Provisão para Eventos/Sinistros Ocorridos e Não Avisados (PEONA)\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 15539444.61\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 134031,\n        \"descricao\": \"Provisão para Eventos/Sinistros Ocorridos e Não Avisados (PEONA) - Outros Prestadores\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 15539444.61\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 134896,\n        \"descricao\": \"Provisão de Eventos/Sinistros a Liquidar para Outros Prestadores de Serviços Assistenciais\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 0\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 136746,\n        \"descricao\": \"PARTICIPAÇÃO DOS BENEFICIÁRIOS EM EVENTOS/SINISTROS INDENIZADOS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 27683.79\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 136747,\n        \"descricao\": \"PARTICIPAÇÃO DOS BENEFICIÁRIOS EM EVENTOS/SINISTROS INDENIZADOS DE ASSISTÊNCIA MÉDICO-HOSPITALAR\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 27683.79\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 136748,\n        \"descricao\": \"Participação dos Beneficiários em Eventos/Sinistros Indenizados a Receber\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 2,\n        \"valor_despesas\": 27683.79\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58111,\n        \"descricao\": \"EVENTOS/SINISTROS CONHECIDOS OU AVISADOS DE ASSISTÊNCIA À SAÚDE\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 194039590.07\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58110,\n        \"descricao\": \"EVENTOS INDENIZÁVEIS LÍQUIDOS / SINISTROS RETIDOS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 189193948.95\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 54564,\n        \"descricao\": \"Provisão para Eventos/Sinistros Ocorridos e Não Avisados (PEONA) - SUS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 216310\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 54563,\n        \"descricao\": \"Provisão para Eventos/Sinistros Ocorridos e Não Avisados (PEONA) - Outros Prestadores\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 9285439.59\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 54562,\n        \"descricao\": \"Provisão para Eventos/Sinistros Ocorridos e Não Avisados (PEONA)\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 9501749.59\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 53695,\n        \"descricao\": \"Provisão de Eventos/Sinistros a Liquidar para Outros Prestadores de Serviços Assistenciais\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 962617.66\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 53694,\n        \"descricao\": \"Provisão de Eventos /Sinistros a Liquidar para o SUS  ( %  hc x ABI)\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 186482.52\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 53693,\n        \"descricao\": \"Provisão de Eventos/Sinistros a Liquidar para o SUS - GRU\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 66738.86\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 53692,\n        \"descricao\": \"Provisão de Eventos/Sinistros a Liquidar para o SUS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 253221.38\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 53691,\n        \"descricao\": \"Participação dos Beneficiários em Eventos/Sinistros Indenizados\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 61625.14\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 53690,\n        \"descricao\": \"Participação dos Beneficiários em Eventos/Sinistros Indenizados a Receber\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 41320.99\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 53689,\n        \"descricao\": \"PARTICIPAÇÃO DOS BENEFICIÁRIOS EM EVENTOS/SINISTROS INDENIZADOS DE ASSISTÊNCIA MÉDICO-HOSPITALAR\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 41320.99\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 53688,\n        \"descricao\": \"PARTICIPAÇÃO DOS BENEFICIÁRIOS EM EVENTOS/SINISTROS INDENIZADOS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 41320.99\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58138,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 213674.37\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58139,\n        \"descricao\": \"VARIAÇÃO DA PROVISÃO DE EVENTOS/SINISTROS OCORRIDOS E NÃO AVISADOS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": -4845641.12\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 59007,\n        \"descricao\": \"VARIAÇÃO DA PROVISÃO DE EVENTOS/SINISTROS OCORRIDOS E NÃO AVISADOS DE ASSISTÊNCIA A SAÚDE\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": -4845641.12\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 59008,\n        \"descricao\": \"VARIAÇÃO DA PROVISÃO DE EVENTOS/SINISTROS OCORRIDOS E NÃO AVISADOS DE ASSISTÊNCIA MÉDICO-HOSPITALAR\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": -5061951.12\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 59009,\n        \"descricao\": \"Variação da Provisão de Eventos/Sinistros Ocorridos e Não Avisados de Assistência Médico-Hospitalar\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": -5061951.12\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 59010,\n        \"descricao\": \"Variação da Provisão de Eventos/Sinistros Ocorridos e Não Avisados de Assistência Médico-Hospitalar\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": -5061951.12\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 59011,\n        \"descricao\": \"Provisão de Eventos/Sinistros Ocorridos e Não Avisados - Outros Prestadores\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": -5061951.12\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 59012,\n        \"descricao\": \"VARIAÇÃO DA PROVISÃO DE EVENTOS/SINISTROS OCORRIDOS E NÃO AVISADOS DE ASSISTÊNCIA ODONTOLÓGICA\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 216310\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 59013,\n        \"descricao\": \"Variação da Provisão de Eventos/Sinistros Ocorridos e Não Avisados de Assistência Odontológica\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 216310\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 59014,\n        \"descricao\": \"Variação da Provisão de Eventos/Sinistros Ocorridos e Não Avisados de Assistência Odontológica\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 216310\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 59015,\n        \"descricao\": \"Provisão de Eventos/Sinistros Ocorridos e Não Avisados - SUS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 216310\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58137,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR \",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 197762.41\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58136,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS NO SISTEMA ÚNICO DE SAÚDE - SUS\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 197762.41\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58135,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 141016.95\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58134,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 1832583.45\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58133,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 47876.55\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58132,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR \",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 1750898.53\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58131,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS -  REEMBOLSO\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 1750898.53\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58130,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 2099452.64\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58129,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 392610.3\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58128,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 7926112.26\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58127,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 5903712.34\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58126,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR \",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 15155032.16\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58125,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  NA MODALIDADE DE PAGAMENTO POR ORÇAMENTO GLOBAL\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 15155032.16\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58124,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 53287.2\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58123,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 5272.93\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58122,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 290855.36\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58121,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 498980.52\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58120,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR \",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 847506.01\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58119,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  NA MODALIDADE DE PAGAMENTO POR CAPITATION\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 847506.01\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58118,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 6582.54\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58117,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 36754710.32\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58116,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 2616864.91\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58115,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 91965011.29\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58114,\n        \"descricao\": \"Despesas com Eventos / Sinistros\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 60175594.97\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58113,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR \",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 176088390.96\n    },\n    {\n        \"ano\": 2025,\n        \"id\": 58112,\n        \"descricao\": \"EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS NA MODALIDADE DE PAGAMENTO POR PROCEDIMENTO\",\n        \"registro_ans\": \"421421\",\n        \"trimestre\": 3,\n        \"valor_despesas\": 176088390.96\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "dados_grafico_operadora",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/operadoras/27452545000195/despesas/chart",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"operadoras",
+						"27452545000195",
+						"despesas",
+						"chart"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "dados_grafico_operadora",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/operadoras/27452545000195/despesas/chart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"operadoras",
+								"27452545000195",
+								"despesas",
+								"chart"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Tue, 03 Feb 2026 03:14:24 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "155"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"chart\": [\n        {\n            \"ano\": 2025,\n            \"trimestre\": 1,\n            \"total\": 343798564.09\n        },\n        {\n            \"ano\": 2025,\n            \"trimestre\": 2,\n            \"total\": 674659333.71\n        },\n        {\n            \"ano\": 2025,\n            \"trimestre\": 3,\n            \"total\": 973821219.05\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "estatisticas_gerais",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/estatisticas",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"estatisticas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "estatisticas_gerais",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/estatisticas",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"estatisticas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Tue, 03 Feb 2026 03:14:43 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "1511"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"total_geral\": 1899293654754.08,\n    \"media_geral\": 10860305.429622378,\n    \"top_5_operadoras\": [\n        {\n            \"razao_social\": \"AMIL ASSISTÊNCIA MÉDICA INTERNACIONAL S.A.\",\n            \"total\": 196745000673.21\n        },\n        {\n            \"razao_social\": \"NOTRE DAME INTERMÉDICA SAÚDE S.A.\",\n            \"total\": 89929846536.84\n        },\n        {\n            \"razao_social\": \"HAPVIDA ASSISTENCIA MEDICA S.A.\",\n            \"total\": 88233812743.75\n        },\n        {\n            \"razao_social\": \"CAIXA DE ASSISTÊNCIA DOS FUNCIONÁRIOS DO BANCO DO BRASIL\",\n            \"total\": 68057719719.42\n        },\n        {\n            \"razao_social\": \"UNIMED NACIONAL - COOPERATIVA CENTRAL\",\n            \"total\": 66224536305.59\n        }\n    ],\n    \"distribuicao_uf\": [\n        {\n            \"uf\": \"AC\",\n            \"despesas\": 1665025032.35\n        },\n        {\n            \"uf\": \"AL\",\n            \"despesas\": 10632640202.27\n        },\n        {\n            \"uf\": \"AM\",\n            \"despesas\": 5617394794.98\n        },\n        {\n            \"uf\": \"AP\",\n            \"despesas\": 36483422.18\n        },\n        {\n            \"uf\": \"BA\",\n            \"despesas\": 11526050588.99\n        },\n        {\n            \"uf\": \"CE\",\n            \"despesas\": 139177206696.56\n        },\n        {\n            \"uf\": \"DF\",\n            \"despesas\": 149769055321.49\n        },\n        {\n            \"uf\": \"ES\",\n            \"despesas\": 45431818910.54\n        },\n        {\n            \"uf\": \"GO\",\n            \"despesas\": 51920465704.53\n        },\n        {\n            \"uf\": \"MA\",\n            \"despesas\": 2055951470.2\n        },\n        {\n            \"uf\": \"MG\",\n            \"despesas\": 148435868923.71\n        },\n        {\n            \"uf\": \"MS\",\n            \"despesas\": 18887460152.28\n        },\n        {\n            \"uf\": \"MT\",\n            \"despesas\": 21634418549.55\n        },\n        {\n            \"uf\": \"PA\",\n            \"despesas\": 16302502443.84\n        },\n        {\n            \"uf\": \"PB\",\n            \"despesas\": 12551041338.17\n        },\n        {\n            \"uf\": \"PE\",\n            \"despesas\": 25446572704.38\n        },\n        {\n            \"uf\": \"PI\",\n            \"despesas\": 14005187924.56\n        },\n        {\n            \"uf\": \"PR\",\n            \"despesas\": 151412016880.34\n        },\n        {\n            \"uf\": \"RJ\",\n            \"despesas\": 139660219522.45\n        },\n        {\n            \"uf\": \"RN\",\n            \"despesas\": 10713839258.37\n        },\n        {\n            \"uf\": \"RO\",\n            \"despesas\": 5364723083.02\n        },\n        {\n            \"uf\": \"RS\",\n            \"despesas\": 82922081632.11\n        },\n        {\n            \"uf\": \"SC\",\n            \"despesas\": 52961611652.66\n        },\n        {\n            \"uf\": \"SE\",\n            \"despesas\": 6187994855.47\n        },\n        {\n            \"uf\": \"SP\",\n            \"despesas\": 772771519055.03\n        },\n        {\n            \"uf\": \"TO\",\n            \"despesas\": 2204504634.05\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000",
+			"type": "string"
+		}
+	]
+}

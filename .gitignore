@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+
+backend/__pycache__/
+backend/*.pyc
+backend/venv/
+backend/.venv/
+backend/.env
+
+backend/assets/
+backend/files/
+
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/npm-debug.log
